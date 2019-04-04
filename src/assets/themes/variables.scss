@@ -1,0 +1,34 @@
+$colors: (
+  primary: #cb1e1e,
+  second:#f0f0f0,
+  third:#fff,
+  four:#333,
+  five:#666,
+  six:#ccc,
+  seven:#f6f9fa,
+  eight:#999,
+  nine:#f05757,
+  ten:#e6e6e6,
+  eleven:#ff6600
+);
+%fatherFlex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+%childFlex {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+$fontSize: (
+  primary: 14px,
+  second:12px,
+  third:16px,
+  four:18px,
+  five:20px,
+  six:22px,
+  seven:24px,
+  nine:30px
+);

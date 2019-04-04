@@ -1,0 +1,40 @@
+{
+  "code": 0,
+  "data": {
+    "dataList": [
+      {
+        "goodsId": 275,
+        "goodsName": "一个规格商品",
+        "goodsPrice": 299,
+        "status": "3",
+        "shopStatus": "1",
+        "shopAddress": "北京东城区",
+        "availableSaleNum": 15,
+        "salesCount": 15,
+        "imgUrl": "group1/M00/00/36/wKgCCFgzoQeAJCOdAABRnXD4Ycw244.jpg"
+      },
+      {
+        "goodsId": 275,
+        "goodsName": "一个规格商品",
+        "goodsPrice": 299,
+        "status": "3",
+        "shopStatus": "1",
+        "shopAddress": "北京东城区",
+        "availableSaleNum": 15,
+        "salesCount": 15,
+        "imgUrl": "group1/M00/00/36/wKgCCFgzoQeAJCOdAABRnXD4Ycw244.jpg"
+      },
+      {
+        "goodsId": 275,
+        "goodsName": "一个规格商品",
+        "goodsPrice": 299,
+        "status": "3",
+        "shopStatus": "1",
+        "shopAddress": "北京东城区",
+        "availableSaleNum": 15,
+        "salesCount": 15,
+        "imgUrl": "group1/M00/00/36/wKgCCFgzoQeAJCOdAABRnXD4Ycw244.jpg"
+      }
+    ]
+  }
+}

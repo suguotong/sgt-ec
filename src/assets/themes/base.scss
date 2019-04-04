@@ -1,0 +1,221 @@
+@import "variables";
+.g-icon1, .g-icon2, .g-icon3, .g-icon4, .g-icon5 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  &.icon-zfb, &.icon-remove, &.icon-zfb, &.icon-more, &.icon-validation {
+    background-position-y: 0;
+  }
+  &.icon-code, &.icon-categories, &.icon-waitShip, &.icon-sort {
+    background-position-y: -100%;
+  }
+  &.icon-pwd, &.icon-allGoods, &.icon-waitPayment, &.icon-btmArrow {
+    background-position-y: -200%;
+  }
+  &.icon-user, &.icon-newest, &.icon-edit {
+    background-position-y: -300%;
+  }
+  &.icon-pwdShow,&.icon-refund {
+    background-position-y: -400%;
+  }
+  &.icon-category-active, &.icon-allOrders {
+    background-position-y: -500%;
+  }
+  &.icon-category, &.icon-address {
+    background-position-y: -600%;
+  }
+  &.icon-cart-active, &.icon-desc {
+    background-position-y: -700%;
+  }
+  &.icon-cart, &.icon-logistics {
+    background-position-y: -800%;
+  }
+  &.icon-index-active, &.icon-phone {
+    background-position-y: -900%;
+  }
+  &.icon-index,&.icon-contact {
+    background-position-y: -1000%;
+  }
+  &.icon-user2-active,&.icon-shop {
+    background-position-y: -1100%;
+  }
+  &.icon-user2,&.icon-car {
+    background-position-y: -1200%;
+  }
+}
+.g-tabbar-item-active {
+  .icon-index {
+    background-position-y: -900%;
+  }
+  .icon-category {
+    background-position-y: -500%;
+  }
+  .icon-cart {
+    background-position-y: -700%;
+  }
+  .icon-user2 {
+    background-position-y: -1100%;
+  }
+}
+.g-icon1 {
+  background-image: url(../images/icon-img-01.png);
+  background-size: 100% 400%;
+}
+.g-icon2 {
+  background-image: url(../images/icon-img-02.png);
+  background-size: 100% 1300%;
+}
+.g-icon3 {
+  background-image: url(../images/icon-img-03.png);
+  background-size: 100% 1300%;
+}
+.g-icon4 {
+  background-image: url(../images/icon-img-04.png);
+  background-size: 100% 300%;
+}
+.g-icon5 {
+  background-image: url(../images/icon_validation.png);
+  background-size: 100% 100%;
+}
+.g-icon-showPwd2 {
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/show-pwd.png");
+  background-size: 100% 100%;
+}
+body, html {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent;
+  background-color: map_get($colors, second);
+  font-size: 14px;
+}
+img {vertical-align: top}
+.weui_media_box .weui_media_desc {
+  font-size: 14px;
+}
+.weui_icon_success:before {
+  color: map_get($colors, primary);
+}
+.weui_tabbar {
+  background-color: map_get($colors, third);
+}
+.weui_tabbar:before {
+  border-top: 1px solid map_get($colors, six);
+}
+.weui_tabbar_label {
+  color: map_get($colors, five);
+}
+ul {
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.clearfix { zoom: 1;}
+.clearfix:after {
+  visibility:hidden;
+  display:block;
+  font-size:0;
+  content:"";
+  clear:both;
+  height:0;
+  overflow:hidden;
+}
+.weui_cells:after {
+  bottom: 0;
+   border-bottom: 1px solid  map_get($colors, six);
+   -webkit-transform-origin: center;
+   transform-origin: center;
+  -webkit-transform: inherit;
+  transform: inherit;
+}
+.weui_cell:before, .weui_cells:before {
+  left: 0;
+  border-top:1px solid map_get($colors, six);
+  -webkit-transform: inherit;
+  transform: inherit;
+}
+a.weui_media_box:active{background-color: inherit;}
+
+.g-price {
+  color: map_get($colors, primary);
+}
+.g-title {
+  margin: 15px;
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  border-left: 2px solid map_get($colors, primary);
+  line-height: 1.2;
+}
+.g-more {
+  display: flex;
+  justify-content:center;
+  text-align: center;
+  color: map_get($colors, four);
+  padding: 15px;
+  i {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+  }
+}
+.g-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  z-index: 999;
+  .g-tabbar-item-active {
+    p {
+      color: map_get($colors, primary);
+    }
+  }
+}
+*:focus {outline: none;}
+.weui_mask {
+  visibility: inherit;
+  opacity: 1;
+}
+.weui_dialog, .weui_toast {
+  visibility: inherit;
+  opacity: 1;
+}
+.weui_dialog_confirm .weui_dialog_ft a {
+  color: map_get($colors, four);
+}
+.weui_toast_text {
+  height: inherit;
+}
+.clspullUp {
+  line-height: 40px;
+}
+.noData {
+  padding: 40px;
+  text-align: center;
+  -webkit-animation:show 200ms ease-out;
+  animation:show 200ms ease-out;
+}
+@keyframes show
+{
+  from { padding-top: 0;}
+  to { padding-top: 40px;}
+}
+
+@-webkit-keyframes show
+{
+  from {padding-top: 0;}
+  to {padding-top: 40px;}
+}
+
+._v-container>._v-content>.pull-to-refresh-layer {
+  margin-top: 0 !important;
+  position: absolute;
+  top: -70px;
+}
+img {
+  max-width: 100%;
+}
