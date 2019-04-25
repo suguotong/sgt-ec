@@ -21,7 +21,7 @@ import BScroll from 'better-scroll'
 import Vue2Filters from 'vue2-filters'
 Vue.use(Vue2Filters)
 // 时间格式化 2016-12-22 10:22:25
-Vue.filter('date', (value, sep1='datetime') => {
+Vue.filter('date', (value, sep1 = 'datetime') => {
   // console.log(value)
   let date = new Date(value)
   let year = date.getFullYear()
@@ -81,12 +81,12 @@ Vue.http.interceptors.push(function (request, next) {
     // console.log(111)
     if (response.data.code == '400' || response.data.code == '4131') {
       store.commit('USER_SIGNOUT')
-      /*Vue.$vux.toast.show({
+      /* Vue.$vux.toast.show({
        text: response.data.message,
        isShowMask: true,
        width: '80%',
        type: 'text'
-       })*/
+       }) */
       // setTimeout(()=>{
       // Vue.$vux.toast.hide()
       router.replace(
@@ -100,9 +100,8 @@ Vue.http.interceptors.push(function (request, next) {
       // }, 2000)
     }
     return response
-  });
-});
-
+  })
+})
 
 const FastClick = require('fastclick')
 FastClick.attach(document.body)

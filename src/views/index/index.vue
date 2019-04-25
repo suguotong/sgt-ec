@@ -646,7 +646,7 @@
     methods: {
       ...mapActions([SET_REQ_SEARCH_PARAMS_PARAMS]),
       onInfinite (done) {
-        if (this.partThree.length == this.goodList.length) {
+        if (this.partThree.length === this.goodList.length) {
           done(true)
         } else {
           this.page++
@@ -675,13 +675,13 @@
       getAllFloor (list) {
         let arr = []
         for (let i = 0; i < list.length; i++) {
-          if (i == 0 || list.length === 2) {
+          if (i === 0 || list.length === 2) {
             let map = {}
             map.floorId = list[i].floorId
             map.floorName = list[i].floorName
             map.contentType = list[i].contentType
             arr.push(map)
-          } else if (list[i + 1] && list[i].floorId != list[i + 1].floorId) {
+          } else if (list[i + 1] && list[i].floorId !== list[i + 1].floorId) {
             let map = {}
             map.floorId = list[i + 1].floorId
             map.floorName = list[i + 1].floorName
@@ -721,6 +721,7 @@
         let errCallback = () => {
           self.isShowLoading = false
         }
+        console.log('hahah' +  url)
         self.$http.post(url).then(successCallback, errCallback)
       },
       handleSrc (url) {
